@@ -1,4 +1,3 @@
-
 // Initialize Firebase(2)
 var config = {
     apiKey: "AIzaSyDOipgg1ISy5kDN7RkWGxHLmzRjSRo3zCc",
@@ -18,8 +17,6 @@ let formMessage = firebase.database().ref('register');
 
 //listen for submit event//
 document.getElementById('registrationform').addEventListener('submit', formSubmit);
-
-
 
 
 //Send Message to Firebase(4)
