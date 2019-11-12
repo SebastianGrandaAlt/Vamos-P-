@@ -5,6 +5,7 @@
 	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, viewport-fit=cover">
 	<meta name="apple-mobile-web-app-capable" content="yes" />
 
+  <link rel="stylesheet" href="style.css" />
 
 	<title>VamosP'</title>
 
@@ -374,10 +375,14 @@
           <h1 class="huge ae-1 margin-bottom-2">Sé parte del cambio!</h1>
           <p class="hero ae-2 margin-bottom-3"><span class="opacity-8">Deja tus datos y te contactaremos a penas esté disponible.</span></p>
 
-          <form action="#" autocomplete="off" class="slides-form margin-bottom-3">
-            <input type="email" class="ae-3" name="email" placeholder="E-mail address"/>
+          <form action="#" id = 'registrationform' autocomplete="off" class="slides-form margin-bottom-3">
+            <div class="alert">Message Sent</div>
+            <input type="email" class="ae-3" name="email" id = "email" placeholder="Tu correo causa!"/>
+            <input type="feedback" class="ae-3" name="feedback" id = "feedback" placeholder="Algun feedback?"/>
+
             <button type="submit" class="button blue gradient ae-4" name="submit">Enviar</button>
           </form>
+
 
           <a href="#" class="button hollow ae-5"><img src="assets/img/appstore.jpg" height="63"/></a><a href="#" class="button hollow ae-6"><img src="assets/img/googleplay.jpg" height="63"/></a>
         </div>
@@ -419,6 +424,10 @@
 
 <!-- Loading Progress Bar -->
 <div class="progress-bar blue"></div>
-		
+    
+<script src="https://www.gstatic.com/firebasejs/5.10.0/firebase.js"></script>
+<script src="app.js"></script>
+
 </body>
+
 </html>
